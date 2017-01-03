@@ -41,9 +41,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,--------------------------------------------------.           ,--------------------------------------------------.
  * | ESC    |   1  |   2  |   3  |   4  |   5  | Del  |           | Del  |   6  |   7  |   8  |   9  |   0  |   ¥|   |
  * |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
- * | Tab    |   Q  |   W  |   E  |   R  |   T  | Enter|           |  -=  |   Y  |   U  |   I  |   O  |   P  |   @`   |
+ * | Tab    |   Q  |   W  |   E  |   R  |   T  | Enter|           | Bspc |   Y  |   U  |   I  |   O  |   P  |   @`   |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
- * | LCtrl  |   A  |   S  |   D  |   F  |   G  |------|           |------|   H  |   J  |   K  |   L  |  ;+  | Bspc   |
+ * | LCtrl  |   A  |   S  |   D  |   F  |   G  |------|           |------|   H  |   J  |   K  |   L  |  ;+  |  -=    |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
  * | LShift |   Z  |   X  |   C  |   V  |   B  |  [{  |           |  ]}  |   N  |   M  |  ,<  |  .>  |  /   |  _     |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
@@ -71,8 +71,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                KC_SPC,KC_LSFT,KC_LGUI,
         // right hand
              KC_DEL,  KC_6,     KC_7,    KC_8,     KC_9,    KC_0,     JIS_JYEN,
-             JIS_MINS,KC_Y,     KC_U,    KC_I,     KC_O,    KC_P,     JIS_ATMK,
-                      KC_H,     KC_J,    KC_K,     KC_L,    JIS_SCLN, KC_BSPC,
+             KC_BSPC, KC_Y,     KC_U,    KC_I,     KC_O,    KC_P,     JIS_ATMK,
+                      KC_H,     KC_J,    KC_K,     KC_L,    JIS_SCLN, JIS_MINS,
              JIS_RBRC,KC_N,     KC_M,    JIS_COMM, JIS_DOT, JIS_SLSH, S(JIS_BSLS),
                                JIS_COLN, JIS_CIRC, XXXXXXX, XXXXXXX,  KC_RCTL,
              KC_RALT,KC_RSFT,
