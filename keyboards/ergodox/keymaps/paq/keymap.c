@@ -47,7 +47,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
  * | LShift |   Z  |   X  |   C  |   V  |   B  |  [{  |           |  ]}  |   N  |   M  |  ,<  |  .>  |  /?  |  _     |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- *   |LCtrl | LAlt | LGui | ZKHK |  L1  |                                       |  :*  |  ^~  |      |      |RCtrl |
+ *   |LCtrl | LAlt | LGui | ZKHK |  L1  |                                       |  :*  |  ^~  | LGui | LAlt |RCtrl |
  *   `----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,-------------.
  *                                        |LCtrl | LAlt |       | RAlt | RShift |
@@ -74,7 +74,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
              KC_BSPC, KC_Y,     KC_U,    KC_I,     KC_O,    KC_P,     JIS_ATMK,
                       KC_H,     KC_J,    KC_K,     KC_L,    JIS_SCLN, JIS_MINS,
              JIS_RBRC,KC_N,     KC_M,    JIS_COMM, JIS_DOT, JIS_SLSH, S(JIS_BSLS),
-                               JIS_COLN, JIS_CIRC, XXXXXXX, XXXXXXX,  KC_RCTL,
+                               JIS_COLN, JIS_CIRC, KC_RGUI, KC_RALT,  KC_RCTL,
              KC_RALT,KC_RSFT,
              M(T_KANA),
              MO(MDIA),MO(SYMB), KC_ENT
